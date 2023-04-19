@@ -39,6 +39,7 @@
 /* TODO-APP: remove !importants when specificity is figured out */
 .icon:active,
 .icon:hover,
+.iconEnd:hover,
 .icon:focus-within {
   outline: none;
   color: var(--fg) !important;

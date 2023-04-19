@@ -32,6 +32,11 @@ export const getPosts = cache(async () => {
             Authorization: process.env.GITHUB_TOKEN ?? '',
           },
         })
+
+        if (commitInfoResponse.status !== 200) {
+          return { ...data, body: content } as Post
+        }
+        
         const commitInfo = await commitInfoResponse.json()
         let lastModified = 0
         if (commitInfo?.length) {
