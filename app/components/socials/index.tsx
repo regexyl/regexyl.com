@@ -1,7 +1,7 @@
-import styles from "./socials.module.css";
-import { GitHub, Twitter, Mail } from "@components/icons";
-// import ThemeSwitcher from "@components/theme-switcher";
-import Link from "next/link";
+import styles from './socials.module.css';
+import { GitHub, Twitter, Mail } from '@components/icons';
+import ThemeSwitcher from '@components/theme-switcher';
+import Link from 'next/link';
 
 type SocialButtonProps = {
   href: string;
@@ -25,6 +25,7 @@ const SocialButton = ({ href, icon, end = false }: SocialButtonProps) => {
 const Socials = () => {
   return (
     <div className={styles.socials}>
+      <ThemeSwitcher />
       <SocialButton
         href="https://github.com/regexyl"
         icon={<GitHub strokeWidth={2} />}
@@ -38,7 +39,6 @@ const Socials = () => {
         icon={<Mail strokeWidth={2} />}
         end={true}
       />
-      {/* <ThemeSwitcher /> */}
     </div>
   );
 };
