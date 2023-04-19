@@ -1,0 +1,21 @@
+.main {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 0.4rem;
+}
+
+.backButton {
+    position: relative;
+    top: 4px;
+}
+
+.about {
+    line-height: 1.6; 
+}
