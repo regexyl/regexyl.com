@@ -59,7 +59,7 @@
 
 .backButton {
     position: relative;
-    top: 4px;
+    top: 0.5rem;
     color: var(--selection);
     margin-right: 0.2rem;
 }
