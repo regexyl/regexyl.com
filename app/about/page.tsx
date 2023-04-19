@@ -8,7 +8,7 @@ export default function About() {
       {
         <article className={styles.main}>
           <div>
-            Hi there! I&apos;m a front end engineer at{' '}
+            Hi there! I&apos;m Regina Liu, a Front End Engineer currently at{' '}
             <a href="https://bebop.xyz">Bebop</a>, based in the sunny little
             island of Singapore.
           </div>
@@ -18,10 +18,13 @@ export default function About() {
             <a href="https://meta.com">Meta</a> (2022),{' '}
             <a href="https://grab.com">Grab</a> (2021) and{' '}
             <a href="https://mask.io/">Mask Network</a> (2021), but I&apos;m a
-            full-fledged noob in many areas. This blog is to document what
-            I&apos;ve learned and things I&apos;m excited to share about.
-            Particularly web performance, improving developer tooling and
-            front-endy things in general.
+            full-fledged noob in many areas.
+          </div>
+          <br />
+          <div>
+            This blog is to document what I&apos;ve learned and things I&apos;m
+            excited to share about. Particularly web performance, improving
+            developer tooling and front-endy things in general.
           </div>
           <br />
           <div>

@@ -17,8 +17,8 @@ export default function Header({ showAbout }: { showAbout: boolean }) {
   return (
     <div className={styles.main}>
       <div>
-        <h1>Regina Liu</h1>
-        <div>Your friendly neighbourhood web tickler.</div>
+        <h1>regexyl</h1>
+        <div className={styles.subtitle}>Your friendly neighbourhood web tickler.</div>
       </div>
 
       <div className={styles.links}>
