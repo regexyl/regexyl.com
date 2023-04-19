@@ -7,10 +7,11 @@ const PostFooter = () => {
     <footer className={styles.footer}>
       <hr />
       <p className={styles.text}>
-        Thanks for reading! You can find me on Twitter at {' '}
+        Thanks for reading! You can find me on Twitter at{' '}
         <Link target="_blank" href="https://twitter.com/regexyl">
           @regexyl
-        </Link>. My DMs are always open ꒰(･‿･)꒱
+        </Link>
+        . DMs are always open ꒰(･‿･)꒱
       </p>
     </footer>
   );

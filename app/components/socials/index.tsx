@@ -25,7 +25,7 @@ const SocialButton = ({ href, icon, end = false }: SocialButtonProps) => {
 const Socials = () => {
   return (
     <div className={styles.socials}>
-      <ThemeSwitcher />
+      <ThemeSwitcher className={styles.icon} />
       <SocialButton
         href="https://github.com/regexyl"
         icon={<GitHub strokeWidth={2} />}
