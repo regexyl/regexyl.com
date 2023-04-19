@@ -1,6 +1,6 @@
 .item {
-    list-style-type: none;
-  }
+  list-style-type: none;
+}
   
 .link {
   display: block;
@@ -38,8 +38,39 @@
 .link:focus .title,
 .link:hover .icon,
 .link:focus .icon {
-  color: var(--fg);
-  /* color: var(--gray); */
+  color: transparent;
+  width: fit-content;
+  background-image: var(--rainbow-bg-image);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+  filter: var(--link-brightness);
+}
+
+@keyframes rainbow-text-simple-animation {
+  0% {
+      background-size: 100%;
+  }
+  80% {
+      background-size: 450%;
+  }
+  100% {
+      background-size: 450%;
+  }
+}
+
+@keyframes rainbow-text-simple-animation-rev {
+  0% {
+      background-size: 450%;
+  }
+  50% {
+      background-size: 100%;
+  }
+  100% {
+      background-size: 100%;
+  }
 }
 
 .link:active .title,

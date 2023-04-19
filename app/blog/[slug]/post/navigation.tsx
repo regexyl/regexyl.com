@@ -1,7 +1,7 @@
 import { Post } from '@lib/types';
 
 import styles from './navigation.module.css';
-import Link from 'next/link';
+import Link from '@components/link';
 
 const Navigation = ({ previous, next }: { previous?: Post; next?: Post }) => {
   return (

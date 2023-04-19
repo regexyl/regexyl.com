@@ -21,6 +21,23 @@
   --selection: rgba(0, 0, 0, 0.99);
   --link: #2c7beb;
 
+  --button-bg-opacity: 0.75;
+
+  /* Rainbow color scheme */
+  --rainbow-bg-image: linear-gradient(
+    45deg,
+    #dd4c50 16.666%, 
+    #E16541 16.666%, 
+    #E16541 33.333%, 
+    #F18F43 33.333%, 
+    #F18F43 50%, 
+    #8B9862 50%, 
+    #8B9862 66.666%, 
+    #476098 66.666%, 
+    #476098 83.333%, 
+    #A7489B 83.333%);
+  --link-brightness: brightness(0.9);
+
   /* Spacing */
   --gap-quarter: 0.25rem;
   --gap-half: 0.5rem;
@@ -47,6 +64,20 @@
   --gray-alpha: rgba(255, 255, 255, 0.5);
   --selection: rgba(255, 255, 255, 0.88);
   --link: #579dff;
+
+  --rainbow-bg-image: linear-gradient(
+    45deg,
+    #ec7b7f 16.666%, 
+    #eb7e60 16.666%, 
+    #d87a60 33.333%, 
+    #efa267 33.333%, 
+    #F18F43 50%, 
+    #b4c287 50%, 
+    #acb787 66.666%, 
+    #778ab3 66.666%, 
+    #8db570 83.333%, 
+    #ca72be 83.333%);
+  --link-brightness: brightness(1.2);
 }
 
 * {
@@ -167,4 +198,29 @@ table {
 td,
 th {
   border: 1px solid gray;
+}
+
+/* Link rainbow animations */
+@keyframes rainbow-text-simple-animation {
+  0% {
+      background-size: 100%;
+  }
+  80% {
+      background-size: 450%;
+  }
+  100% {
+      background-size: 450%;
+  }
+}
+
+@keyframes rainbow-text-simple-animation-rev {
+  0% {
+      background-size: 450%;
+  }
+  40% {
+      background-size: 450%;
+  }
+  100% {
+      background-size: 100%;
+  }
 }

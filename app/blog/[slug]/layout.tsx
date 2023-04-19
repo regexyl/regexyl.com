@@ -3,7 +3,7 @@ import Navigation from './post/navigation';
 import PostFooter from './post/post-footer';
 import styles from './layout.module.css';
 import { Metadata } from 'next';
-import Link from 'next/link';
+import Link from '@components/link';
 
 export async function generateStaticParams() {
   const posts = await getPosts();

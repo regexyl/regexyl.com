@@ -25,10 +25,43 @@
     text-align: right;
   }
   
-  .title {
-    font-weight: normal;
-    margin-bottom: var(--gap-quarter);
+.title {
+  font-weight: normal;
+  margin-bottom: var(--gap-quarter);
+  color: transparent;
+  background-image: var(--rainbow-bg-image);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+  filter: brightness(0.9);
+  font-weight: 600;
+}
+
+@keyframes rainbow-text-simple-animation {
+  0% {
+      background-size: 100%;
   }
+  80% {
+      background-size: 450%;
+  }
+  100% {
+      background-size: 450%;
+  }
+}
+
+@keyframes rainbow-text-simple-animation-rev {
+    0% {
+        background-size: 450%;
+    }
+    40% {
+        background-size: 450%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
   
   .previous:hover, .next:hover,
   .previous:focus, .next:focus {
