@@ -20,7 +20,7 @@ export default function Header({ showAbout }: { showAbout: boolean }) {
         <Link href="/" className={styles.title}>
           regexyl
         </Link>
-        <div>Your friendly neighbourhood web tickler.</div>
+        <div>~Your friendly neighbourhood web tickler~</div>
       </div>
 
       <div className={styles.links}>
