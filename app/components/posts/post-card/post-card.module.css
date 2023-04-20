@@ -37,12 +37,15 @@
 .link:hover .title,
 .link:focus .title,
 .link:hover .icon,
-.link:focus .icon {
+.link:focus .icon,
+.link:active .title,
+.link:active .icon {
   color: transparent;
   width: fit-content;
   background-image: var(--rainbow-bg-image);
   background-size: 100%;
   background-repeat: repeat;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
@@ -71,11 +74,6 @@
   100% {
       background-size: 100%;
   }
-}
-
-.link:active .title,
-.link:active .icon {
-  color: var(--link);
 }
 
 .title,

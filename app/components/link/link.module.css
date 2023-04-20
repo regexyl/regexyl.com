@@ -3,6 +3,7 @@
     background-image: var(--rainbow-bg-image);
     background-size: 100%;
     background-repeat: repeat;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
