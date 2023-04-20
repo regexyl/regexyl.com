@@ -77,7 +77,7 @@ export const metadata = {
     creator: '@regexyl',
   },
   icons: {
-    shortcut: 'https://regexyl.com/favicons/favicon.ico',
+    shortcut: 'https://regexyl.com/favicon.ico',
   },
   alternates: {
     types: {

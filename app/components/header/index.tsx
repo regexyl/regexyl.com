@@ -6,10 +6,10 @@ import { ArrowLeft } from '@components/icons';
 export default function Header({ showAbout }: { showAbout: boolean }) {
   const buttonGoTo = showAbout ? '/' : '/about';
   const buttonContent = showAbout ? (
-    <>
+    <span className={styles.about}>
       <ArrowLeft className={styles.backButton} />
-      <span className={styles.about}>Posts</span>
-    </>
+      <span>Posts</span>
+    </span>
   ) : (
     <span className={styles.about}>About</span>
   );
