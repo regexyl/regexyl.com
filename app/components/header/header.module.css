@@ -89,14 +89,14 @@
     }
 
     .links {
-        margin-top: 0.2rem;
+        margin-top: 0.4rem;
         flex-direction: row-reverse;
         align-items: flex-start;
     }
 
     .about {
         position: relative;
-        top: 0.3rem;
+        top: 0.5rem;
         margin-right: 0.4rem;
     }
 

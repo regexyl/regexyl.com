@@ -1,7 +1,7 @@
 import { Inter } from 'next/font/google';
 import './styles/globals.css';
-import ThemeProvider from '@theme-provider';
 import Script from 'next/script';
+import { Providers } from '@providers';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
@@ -11,10 +11,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.variable}>
-      <ThemeProvider>
+    <html lang="en" className={inter.variable} suppressHydrationWarning>
+      <Providers>
         <body>{children}</body>
-      </ThemeProvider>
+      </Providers>
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-J1BDJQJW25"
         strategy="afterInteractive"

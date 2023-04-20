@@ -14,8 +14,9 @@ const ThemeSwitcher = ({
   iconSize?: number;
   strokeWidth?: number;
 }) => {
-  const { theme: activeTheme, setTheme } = useTheme();
+  const { theme, resolvedTheme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  console.log({ theme, resolvedTheme });
 
   useEffect(() => {
     setMounted(true);
@@ -25,15 +26,11 @@ const ThemeSwitcher = ({
     <>
       {mounted && (
         <button
-          onClick={() => setTheme(activeTheme === 'light' ? 'dark' : 'light')}
+          onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
           aria-label="Toggle light and dark modes"
           className={`${socialStyles.icon} ${className}`}
         >
-          {activeTheme === 'light' ? (
-            <Moon size={iconSize} strokeWidth={strokeWidth || 2} />
-          ) : (
-            <Sun size={iconSize} strokeWidth={strokeWidth || 1} />
-          )}
+          {getIcon(theme, resolvedTheme, iconSize, strokeWidth)}
         </button>
       )}
     </>
@@ -41,3 +38,20 @@ const ThemeSwitcher = ({
 };
 
 export default ThemeSwitcher;
+
+// Sub-components
+
+function getIcon(
+  theme: ReturnType<typeof useTheme>['theme'],
+  resolvedTheme: ReturnType<typeof useTheme>['resolvedTheme'],
+  iconSize: number | undefined,
+  strokeWidth: number | undefined
+) {
+  theme = theme === 'system' ? resolvedTheme : theme;
+
+  if (resolvedTheme == 'light') {
+    return <Moon size={iconSize} strokeWidth={strokeWidth || 2} />;
+  } else {
+    return <Sun size={iconSize} strokeWidth={strokeWidth || 1} />;
+  }
+}
