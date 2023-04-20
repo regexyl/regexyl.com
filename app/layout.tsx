@@ -12,9 +12,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.variable} suppressHydrationWarning>
-      <Providers>
-        <body>{children}</body>
-      </Providers>
+      <body>
+        <Providers>{children}</Providers>
+      </body>
       <Script
         src="https://www.googletagmanager.com/gtag/js?id=G-J1BDJQJW25"
         strategy="afterInteractive"
