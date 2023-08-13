@@ -7,6 +7,9 @@ dependencies:
   '@mdx-js/loader':
     specifier: ^2.3.0
     version: 2.3.0(webpack@5.79.0)
+  '@next/mdx':
+    specifier: ^13.4.1
+    version: 13.4.1(@mdx-js/loader@2.3.0)
   '@types/mdx':
     specifier: ^2.0.4
     version: 2.0.4
@@ -70,6 +73,9 @@ dependencies:
   remark-toc:
     specifier: ^8.0.1
     version: 8.0.1
+  start:
+    specifier: ^5.1.0
+    version: 5.1.0
   typescript:
     specifier: 5.0.4
     version: 5.0.4
@@ -595,6 +601,21 @@ packages:
     resolution: {integrity: sha512-wuGN5qSEjSgcq9fVkH0Y/qIPFjnZtW3ZPwfjJOn7l/rrf6y8J24h/lo61kwqunTyzZJm/ETGfGVU9PUs8cnzEA==}
     dependencies:
       glob: 7.1.7
+    dev: false
+
+  /@next/mdx@13.4.1(@mdx-js/loader@2.3.0):
+    resolution: {integrity: sha512-jYhj/23/zamwgaZhYHnLc6B6lM/YnTkW5g/L6AClkZ3/o/Kups0Jq5TdYRXQ85vpaGYCNTnLr4kxdtCNWxuYzA==}
+    peerDependencies:
+      '@mdx-js/loader': '>=0.15.0'
+      '@mdx-js/react': '>=0.15.0'
+    peerDependenciesMeta:
+      '@mdx-js/loader':
+        optional: true
+      '@mdx-js/react':
+        optional: true
+    dependencies:
+      '@mdx-js/loader': 2.3.0(webpack@5.79.0)
+      source-map: 0.7.4
     dev: false
 
   /@next/swc-darwin-arm64@13.3.0:
@@ -4553,6 +4574,12 @@ packages:
 
   /sprintf-js@1.0.3:
     resolution: {integrity: sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==}
+    dev: false
+
+  /start@5.1.0:
+    resolution: {integrity: sha512-lirwWQmvBC65bnxU3HzKx5m7vfZJZTx/FrKyPWbtobcvujGbinQQRrNodtcgkp4mTZ00umzDeg7lraN351l0aA==}
+    engines: {node: '>=4'}
+    deprecated: Deprecated in favor of https://github.com/deepsweet/start
     dev: false
 
   /stop-iteration-iterator@1.0.0:

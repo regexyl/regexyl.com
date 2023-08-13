@@ -25,9 +25,9 @@ export default function Header({ showAbout }: { showAbout: boolean }) {
 
       <div className={styles.links}>
         <Socials />
-        <Link href={buttonGoTo}>
+        {/* <Link href={buttonGoTo}>
           {buttonContent}
-        </Link>
+        </Link> */}
       </div>
     </div>
   );
